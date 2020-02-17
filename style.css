@@ -1,0 +1,266 @@
+#full-body
+{
+  height: auto;
+  border:1px solid black;
+}
+#head-first
+{
+  height: auto;
+  /* border:1px solid black; */
+}
+#pre
+{
+  /* background-color: 	#00ffbf; */
+  font-style: italic;
+}
+.support
+{
+  width: 20px;
+  height: 20px;
+  background-color: 	#0040ff;
+}
+#head-second
+{
+  height: auto;;
+}
+/* Change Navigation Color */
+.navbar #myMenu .custom-nav .nav-item a{
+  color: white;
+}
+/* Change Navigation Hover Color */
+.navbar #myMenu .custom-nav .nav-item a:hover{
+  background: #00cc00;
+  font-weight: bold;
+
+}
+#small_heading
+{
+  color:white;
+  width:150px;
+  height: 40px;
+  text-align: center;
+  padding: 6px;
+  background-color:cyan;;
+  /* padding-left: 10px; */
+
+
+
+}
+#small_heading1
+{
+  color:white;
+  width:150px;
+  height: 40px;
+  text-align: center;
+  padding: 6px;
+  background-color:cyan;;
+}
+#small_heading2
+{
+  color:white;
+  width:160px;
+  height: 40px;
+  text-align: center;
+  padding: 6px;
+  background-color:cyan;;
+
+}
+#small_heading3
+{
+  color:white;
+  width:160px;
+  height: 40px;
+  text-align: center;
+  padding: 6px;
+  background-color:cyan;;
+
+}
+#small_heading4
+{
+  color:white;
+  width:200px;
+  height: 40px;
+  text-align: center;
+  padding: 6px;
+  background-color:cyan;;
+
+}
+table,td
+{
+  border-top: 0.5px dotted black;
+  border-bottom: 0.5px dotted black;
+ border-collapse: collapse;
+}
+
+
+}
+#footer
+{
+  width: 100%;
+  height: 150px;
+}
+
+
+
+/* Featured Design */
+.firstdiv
+{
+    border:2px solid black;
+    /* height: 300px; */
+    margin-left: 15px;
+}
+.seconddiv
+{
+    border:2px solid black;
+    /* height: 300px; */
+    margin-left: 15px;
+}
+.thriddiv
+
+  {
+      border:2px solid black;
+      /* height: 300px; */
+      margin-left: 15px;
+  }
+.fourthdiv
+{
+  border:2px solid black;
+  /* height: 300px; */
+  margin-left: 15px;
+}
+.fifthdiv
+{
+  border:2px solid black;
+  /* height: 300px; */
+  margin-left: 15px;
+
+}
+.sixththdiv
+{
+  border:2px solid black;
+  /* height: 300px; */
+  margin-left: 15px;
+
+}
+.seventhdiv
+{
+  border:2px solid black;
+  /* height: 300px; */
+  margin-left: 15px;
+
+}
+.eightdiv
+{
+  border:2px solid black;
+  /* height: 300px; */
+  margin-left: 15px;
+
+}
+.ninthdiv
+{
+  border:2px solid black;
+  /* height: 300px; */
+  margin-left: 15px;
+
+}
+.tenthdiv
+{
+  border:2px solid black;
+  /* height: 300px; */
+  margin-left: 15px;
+
+}
+.elevendiv
+{
+  border:2px solid black;
+  /* height: 300px; */
+  margin-left: 15px;
+
+}
+.twelvediv
+{
+  border:2px solid black;
+  /* height: 300px; */
+  margin-left: 15px;
+
+}
+.thriteendiv
+{
+  border:2px solid black;
+  /* height: 300px; */
+  margin-left: 15px;
+
+}
+.fourthteendiv
+{
+  border:2px solid black;
+  /* height: 300px; */
+  margin-left: 15px;
+
+}
+#first_help
+{
+  border: 20px solid  #4dff4d;
+  width: 90%;
+  margin-left: 45px;
+}
+#download1
+{
+     width: 200px;
+     height: 30px;
+     background-color: #44cc00;
+     color: white;
+
+}
+#download2
+{
+     width: 200px;
+     height: 30px;
+     background-color:#2e5cb8;
+     color: white;
+
+}
+#download3
+{
+     width: 200px;
+     height: 30px;
+     background-color:#2e5cb8;
+     color: white;
+
+}
+/* Contact Us Design */
+.close_id
+{
+  width: 90%;
+  background-color:  #ffe066;
+  border: 1px solid balck;
+}
+.jumb-id
+{
+  width: 90%;
+
+
+}
+/* Search Result */
+#table_anchor a:link
+{
+      color:black;
+      text-decoration: none;
+}
+#table_anchor1 a:hover
+{
+      color:orange;
+}
+#table_anchor1  tr
+  { height: 10px;
+   }
+/* ================================ */
+/* password chaging design */
+.form-div1
+{
+    margin: 100px auto 50px;
+		padding: 25px 15px 10px 15px;
+		border: 1px solid #80ced7;
+		border-radius: 5px;
+		font-size: 1.1em;
+}
