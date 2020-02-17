@@ -210,7 +210,7 @@
                                                 <label><input type="checkbox" name="remember">Keep me logged in.</label>
                                               </div>
                                               <button type="submit" name="login-btn" class="btn btn-success" >Login</button>
-                                              <a href="#">Forgot Your Password?</a>
+                                              <a href="Forgot.php">Forgot Your Password?</a>
                                             </form>
 
 

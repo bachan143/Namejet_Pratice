@@ -1,4 +1,4 @@
-<?php  require_once 'controller/authController.php';      ?>
+<?php  include 'controller/authController.php';      ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -108,16 +108,30 @@
                 <div class="body">
                      <div class="row">
                        <div class="col-md-6 ml-5 mt-5">
-                          <h4>Forgot Your Password?</h4>
-                          <p>To reset your password please enter your user email.</p>
-                          <form class="" action="Forgot.php" method="post">
+                          <h4>Reset Your Password?</h4>
+
+                          <form  action="reset_password.php" method="post">
+                            <?php if(count($errors3)>0):            ?>
+                              <div class="alert alert-danger">
+                                <?php foreach($errors3 as $error): ?>
+                                  <li><?php echo $error; ?></li>
+                                <?php  endforeach; ?>
+
+                              </div>
+                            <?php endif;  ?>
                             <div class="form-group">
-                              <label for="email">Email:</label>
-                              <input type="email" name="email" value="" class="form-control">
-                              <p class="text-muted">You may need to check your spam folder or unblock donotreply@namejet.com.</p>
+                              <label for="password">Password:</label>
+                              <input type="Password" name="password" value="" class="form-control">
 
                             </div>
-                            <button type="button" name="forgot-pssword-btn" class="btn btn-info btn-lg">Submit</button>
+                            <div class="form-group">
+                              <label for="passwordConf">ConfirmPassword:</label>
+                              <input type="password" name="passwordConf" value="" class="form-control">
+
+                            </div>
+                            <button type="submit" name="reset-password-btn" class="btn btn-info btn-lg">
+                              Reset Password
+                            </button>
 
                           </form>
 

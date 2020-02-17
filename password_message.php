@@ -108,6 +108,10 @@
                 <div class="body">
                      <div class="container">
                         <div class="col-md-4 offset-md-4 form-div1 login">
+                          <p>
+                             An email has been sent to your email address to with a
+                             link to reset your password.
+                          </p>
 
                         </div>
 

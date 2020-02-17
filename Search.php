@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css"/>
          <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css"/>
+        <link type="text/css" href="//gyrocode.github.io/jquery-datatables-checkboxes/1.2.11/css/dataTables.checkboxes.css" rel="stylesheet" />
          <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
          <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
@@ -157,72 +158,72 @@
                                             <h7 style="margin-left:15px;">Domain Extensions</h7>
                                               <div class="col-md-6">
                                                 <div class="checkbox">
-                                                  <label><input type="checkbox" value="" checked>.com</label>
+                                                  <label><input type="checkbox" value="" class="checkbox">.com</label>
                                                 </div>
                                                 <div class="checkbox">
-                                                  <label><input type="checkbox" value="" checked>.org</label>
+                                                  <label><input type="checkbox" value="" class="checkbox">.org</label>
                                                 </div>
                                                 <div class="checkbox disabled">
-                                                  <label><input type="checkbox" value="" checked>.co</label>
+                                                  <label><input type="checkbox" value="" class="checkbox">.co</label>
                                                 </div>
                                                 <div class="checkbox">
-                                                  <label><input type="checkbox" value="" checked>.tv</label>
+                                                  <label><input type="checkbox" value="" class="checkbox">.tv</label>
                                                 </div>
                                                 <div class="checkbox">
-                                                  <label><input type="checkbox" value="" checked>.me</label>
+                                                  <label><input type="checkbox" value="" class="checkbox">.me</label>
                                                 </div>
                                                 <div class="checkbox disabled">
-                                                  <label><input type="checkbox" value="" checked>.io</label>
+                                                  <label><input type="checkbox" value="" class="checkbox">.io</label>
                                                 </div>
                                                 <div class="checkbox">
-                                                  <label><input type="checkbox" value="" checked>.club</label>
+                                                  <label><input type="checkbox" value="" class="checkbox">.club</label>
                                                 </div>
                                                 <div class="checkbox">
-                                                  <label><input type="checkbox" value="" checked>.games</label>
+                                                  <label><input type="checkbox" value="" class="checkbox">.games</label>
                                                 </div>
                                                 <div class="checkbox">
-                                                  <label><input type="checkbox" value="" checked>.online</label>
+                                                  <label><input type="checkbox" value="" class="checkbox">.online</label>
                                                 </div>
                                                 <div class="checkbox">
-                                                  <label><input type="checkbox" value="" checked>.click</label>
+                                                  <label><input type="checkbox" value="" class="checkbox">.click</label>
                                                 </div>
 
                                               </div>
                                               <div class="col-md-6">
                                                 <div class="checkbox">
-                                                  <label><input type="checkbox" value="" checked>.net</label>
+                                                  <label><input type="checkbox" value="" class="checkbox">.net</label>
                                                 </div>
                                                 <div class="checkbox">
-                                                  <label><input type="checkbox" value="" checked>.cc</label>
+                                                  <label><input type="checkbox" value="" class="checkbox">.cc</label>
                                                 </div>
                                                 <div class="checkbox disabled">
-                                                  <label><input type="checkbox" value="" checked>.biz</label>
+                                                  <label><input type="checkbox" value="" class="checkbox">.biz</label>
                                                 </div>
                                                 <div class="checkbox">
-                                                  <label><input type="checkbox" value="" checked>.info</label>
+                                                  <label><input type="checkbox" value="" class="checkbox">.info</label>
                                                 </div>
                                                 <div class="checkbox">
-                                                  <label><input type="checkbox" value="" checked>.xyz</label>
+                                                  <label><input type="checkbox" value="" class="checkbox">.xyz</label>
                                                 </div>
                                                 <div class="checkbox disabled">
-                                                  <label><input type="checkbox" value="" checked>.rocks</label>
+                                                  <label><input type="checkbox" value="" class="checkbox">.rocks</label>
                                                 </div>
                                                 <div class="checkbox">
-                                                  <label><input type="checkbox" value="" checked>.live</label>
+                                                  <label><input type="checkbox" value="" class="checkbox">.live</label>
                                                 </div>
                                                 <div class="checkbox">
-                                                  <label><input type="checkbox" value="" checked>.social</label>
+                                                  <label><input type="checkbox" value="" class="checkbox">.social</label>
                                                 </div>
                                                 <div class="checkbox ">
-                                                  <label><input type="checkbox" value="" checked>.site</label>
+                                                  <label><input type="checkbox" value="" class="checkbox">.site</label>
                                                 </div>
                                                 <div class="checkbox ">
-                                                  <label><input type="checkbox" value="" checked>.pizza</label>
+                                                  <label><input type="checkbox" value="" class="checkbox">.pizza</label>
                                                 </div>
 
                                               </div>
                                               <div class="" style="margin-left:120px;">
-                                                <a href="#">unselect all|</a>
+                                                <a id="select_all" href="javascript:void(0);">check all|</a>
                                                 <a href="#">update</a>
                                               </div>
 
@@ -435,10 +436,10 @@
                                                           <div class="col-sm-12 bg-light rounded my-2 py-2">
 
 
-                                                                <table class="table table-bordered table-striped table-hover">
+                                                                <table class="table table-bordered table-striped table-hover" id="example1">
                                                                 <thead id="table_anchor">
                                                                   <tr >
-                                                                    <th><input type="checkbox"></th>
+                                                                    <th></th>
                                                                     <th>   <a href="#">Domain</a></th>
                                                                     <th>  <a href="#">Type</a></th>
                                                                     <th> <a href="#">   Bidders</a> </th>
@@ -460,7 +461,7 @@
                                                                         while($row=mysqli_fetch_assoc($res)){
                                                                       ?>
                                                                       <tr id="table_anchor1">
-                                                                         <td height="10"><input type="checkbox"></td>
+                                                                         <td></td>
                                                                          <td> <a href="#">  <?= $row['domain_name'] ?> </a> </td>
                                                                          <td><?= $row['type']  ?>  </td>
                                                                          <td><?= $row['Bidders']  ?> </td>
@@ -565,16 +566,97 @@
 <script type="text/javascript">
            	        $(document).ready(function()
            	        {
-           	        	$('table').DataTable(
+           	        var table=$('table').DataTable(
                         {
                           ordering:false,
-                          "rowHeight": 'auto'
+                          "rowHeight": 'auto',
+                          'columnDefs': [
+                            {
+                               'targets': 0,
+                               'checkboxes': {
+                                  'selectRow': true
+                               }
+                            }
+                          ],
+                          'select': {
+                            'style': 'multi'
+                          },
+                          'order': [[1, 'asc']]
 
-                        }
-                      );
+                        });
+
+                        // Check box Selected
+
+
+
+                                  // Handle form submission event
+                                  $('#frm-example').on('submit', function(e){
+                                  var form = this;
+
+                                  var rows_selected = table.column(0).checkboxes.selected();
+
+                                  // Iterate over all selected checkboxes
+                                  $.each(rows_selected, function(index, rowId){
+                                    // Create a hidden element
+                                    $(form).append(
+                                        $('<input>')
+                                           .attr('type', 'hidden')
+                                           .attr('name', 'id[]')
+                                           .val(rowId)
+                                    );
+                                  });
+                                  });
+
+                                   //end check box Selected
+
+
+
+                                  // ===================================================================================================
+
+
+                                  $("#select_all").click(function() { //"select all" change
+                                                      $(".checkbox").data('checked', !$(".checkbox").data('checked')).prop('checked', $(".checkbox").data('checked')); //change all ".checkbox" checked status
+                                                      if ($(".checkbox").data('checked')) {
+                                                      this.innerHTML = "uncheck all";
+                                                      } else
+                                                      this.innerHTML = "check all";
+                                                      });
+
+                                                      //".checkbox" change
+                                                      $('.checkbox').change(function() {
+                                                      //uncheck "select all", if one of the listed checkbox item is unchecked
+                                                      if (false == $(this).prop("checked")) { //if this item is unchecked
+                                                      $("#select_all").prop('checked', false); //change "select all" checked status to false
+                                                      }
+                                                      //check "select all" if all checkbox items are checked
+                                                      if ($('.checkbox:checked').length == $('.checkbox').length) {
+                                                      $("#select_all").html("uncheck all");
+                                                      $(".checkbox").data('checked', true);
+                                                      }
+                                                      else {
+                                                      $("#select_all").html("check all");
+                                                      $(".checkbox").data('checked', false);
+                                                      }
+                                                      });
+
+
+
+
+
+
+
+
+                                  // ========================================================================================================================
+
+
+
+
+
 
            	        });
+
            </script>
+
 
 
 
@@ -589,6 +671,9 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
 <script type="text/javascript" src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
+<script type="text/javascript" src="//gyrocode.github.io/jquery-datatables-checkboxes/1.2.11/js/dataTables.checkboxes.min.js"></script>
+
+</script>
 
 
   </body>

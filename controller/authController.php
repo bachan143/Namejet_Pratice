@@ -9,6 +9,7 @@
     $policy2="";
     $errors1=array();
     $errors2=array();
+    $errors3=array();
 
    //if user clicks on the sign up button
  if(isset($_POST['signup-btn']))
@@ -89,7 +90,7 @@
    	       if(count($errors1)===0)
    	       {
              $password=md5($password);
-   	       	$sql="select * from users where  username='$username' AND password='$password' limit 1";
+   	       	$sql="select * from users where  email='$username' AND password='$password' limit 1";
               $results=mysqli_query($conn,$sql);
               $row=mysqli_fetch_assoc($results);
 
@@ -165,8 +166,9 @@ function   verifyUser($token)
 }
 
 //if user Clicks on the forgot Password button
-  if(isset($_POST['forgot-pssword-btn']))
+  if(isset($_POST['forgot-password']))
   {
+
       $email=$_POST['email'];
       if(!filter_var($email,FILTER_VALIDATE_EMAIL))
       {
@@ -190,7 +192,37 @@ function   verifyUser($token)
 
 
   }
+   //if user clicked on the reset password button
+   if(isset($_POST['reset-password-btn']))
+   {
+     echo "cricket";
+        $password=$_POST['password'];
+        $passwordConf=$_POST['passwordConf'];
+        if(empty($password) || empty($passwordConf))
+        {
+             $errors3['password']="Password Required";
 
+        }
+        if($password !==$passwordConf)
+        {
+          $errors3['password']="The two password do not match";
+        }
+          $password=md5($password);
+          echo $password;
+          $email=$_SESSION['email'];
+        if(count($errors3)==0)
+        {
+
+            $sql="update users set password='$password' where email='$email'";
+            $result=mysqli_query($conn,$sql);
+            if($result)
+            {
+                 header('location:MyAccount.php');
+                 exit(0);
+
+            }
+        }
+   }
 
 
   function resetPassword($token)
