@@ -114,6 +114,9 @@
                     <div class="search_body">   <!--Search Starting-->
                           <div class="row">
                               <div class="col-md-3">
+                                <form class="" action="search.php" method="post">
+
+
                                 <div class="row">
                                   <div class="col-sm-12">
 
@@ -122,10 +125,10 @@
 
                                              <h4>Advanced Search</h4>
                                              <select class="selectpicker" data-show-subtext="true" data-live-search="true">
-                                                <option data-subtext="Rep California">Contains:</option>
-                                                <option data-subtext="Sen California">Starts with:</option>
-                                                <option data-subtext="Sen Massacusetts">Ends with:</option>
-                                                <option data-subtext="Rep Alabama">Matches:</option>
+                                                <option name="" value="" >Contains:</option>
+                                                <option >Starts with:</option>
+                                                <option >Ends with:</option>
+                                                <option >Matches:</option>
 
                                                 </select>
                                                   <form class="form-inline">
@@ -136,137 +139,187 @@
                                           </div>
                                           <div class="row">
                                                 <div class="col-sm-12">
+                                                  <form class="" action="Search.php" method="post">
+
+
                                                   <h4>Domain Type</h4>
-                                                  <select class="selectpicker" data-show-subtext="true" data-live-search="true">
-                                                     <option data-subtext="Rep California">All Domains</option>
-                                                     <option data-subtext="Sen California">Pre-Release</option>
-                                                     <option data-subtext="Sen Massacusetts">Pending Deletes</option>
-                                                     <option data-subtext="Rep Alabama">Public Auctions</option>
+
+                                                  <select class="selectpicker"  name="Domain_Type">
+                                                     <option  value="All_domains">All Domains</option>
+                                                     <option  value="Pre-Release">Pre-Release</option>
+                                                     <option  value="Pending_Deletes">Pending Deletes</option>
+                                                     <option  value="Public_Auctions">Public Auctions</option>
 
                                                      </select>
                                                      <br/>
                                                      <div class="" style="text-align:right;">
-                                                       <a href="#">reset|</a>
-                                                       <a href="#">update</a>
+                                                      <input type="submit" name="" value="update"></input>
+
+                                                      <input type="submit" name="reset" value="reset">
                                                      </div>
+                                                  </form>
 
 
                                                 </div>
 
                                           </div>
+                                          <!-- ================================ -->
+                                          <div class="row">
+                                                <div class="col-sm-12">
+                                                  <form class="" action="Search.php" method="post">
+
+
+                                                  <h4>Domain Type</h4>
+
+                                                  <select class="selectpicker"  name="public_private">
+                                                     <option  value="public">Public</option>
+                                                     <option  value="private">Private</option>
+
+                                                     </select>
+                                                     <br/>
+                                                     <div class="" style="text-align:right;">
+                                                      <input type="submit" name="" value="update"></input>
+
+                                                      <input type="submit" name="reset" value="reset">
+                                                     </div>
+                                                  </form>
+
+
+                                                </div>
+
+                                          </div>
+                                          <!-- ===================================== -->
                                           <div class="row">
                                             <h7 style="margin-left:15px;">Domain Extensions</h7>
+                                            <form class="" action="search.php" method="post">
+
+
                                               <div class="col-md-6">
                                                 <div class="checkbox">
-                                                  <label><input type="checkbox" value="" class="checkbox">.com</label>
+                                                  <label><input type="checkbox" value="com" class="checkbox" name="check_list">.com</label>
                                                 </div>
                                                 <div class="checkbox">
-                                                  <label><input type="checkbox" value="" class="checkbox">.org</label>
+                                                  <label><input type="checkbox" value="org" class="checkbox" name="check_list">.org</label>
                                                 </div>
                                                 <div class="checkbox disabled">
-                                                  <label><input type="checkbox" value="" class="checkbox">.co</label>
+                                                  <label><input type="checkbox" value="co" class="checkbox" name="check_list">.co</label>
                                                 </div>
                                                 <div class="checkbox">
-                                                  <label><input type="checkbox" value="" class="checkbox">.tv</label>
+                                                  <label><input type="checkbox" value="tv" class="checkbox" name="check_list">.tv</label>
                                                 </div>
                                                 <div class="checkbox">
-                                                  <label><input type="checkbox" value="" class="checkbox">.me</label>
+                                                  <label><input type="checkbox" value="me" class="checkbox" name="check_list">.me</label>
                                                 </div>
                                                 <div class="checkbox disabled">
-                                                  <label><input type="checkbox" value="" class="checkbox">.io</label>
+                                                  <label><input type="checkbox" value="io" class="checkbox" name="check_list">.io</label>
                                                 </div>
                                                 <div class="checkbox">
-                                                  <label><input type="checkbox" value="" class="checkbox">.club</label>
+                                                  <label><input type="checkbox" value="club" class="checkbox" name="check_list">.club</label>
                                                 </div>
                                                 <div class="checkbox">
-                                                  <label><input type="checkbox" value="" class="checkbox">.games</label>
+                                                  <label><input type="checkbox" value="games" class="checkbox" name="check_list">.games</label>
                                                 </div>
                                                 <div class="checkbox">
-                                                  <label><input type="checkbox" value="" class="checkbox">.online</label>
+                                                  <label><input type="checkbox" value="online" class="checkbox" name="check_list">.online</label>
                                                 </div>
                                                 <div class="checkbox">
-                                                  <label><input type="checkbox" value="" class="checkbox">.click</label>
+                                                  <label><input type="checkbox" value="click" class="checkbox" name="check_list">.click</label>
                                                 </div>
 
                                               </div>
                                               <div class="col-md-6">
                                                 <div class="checkbox">
-                                                  <label><input type="checkbox" value="" class="checkbox">.net</label>
+                                                  <label><input type="checkbox" value="net" class="checkbox" name="check_list">.net</label>
                                                 </div>
                                                 <div class="checkbox">
-                                                  <label><input type="checkbox" value="" class="checkbox">.cc</label>
-                                                </div>
-                                                <div class="checkbox disabled">
-                                                  <label><input type="checkbox" value="" class="checkbox">.biz</label>
-                                                </div>
-                                                <div class="checkbox">
-                                                  <label><input type="checkbox" value="" class="checkbox">.info</label>
-                                                </div>
-                                                <div class="checkbox">
-                                                  <label><input type="checkbox" value="" class="checkbox">.xyz</label>
-                                                </div>
-                                                <div class="checkbox disabled">
-                                                  <label><input type="checkbox" value="" class="checkbox">.rocks</label>
-                                                </div>
-                                                <div class="checkbox">
-                                                  <label><input type="checkbox" value="" class="checkbox">.live</label>
-                                                </div>
-                                                <div class="checkbox">
-                                                  <label><input type="checkbox" value="" class="checkbox">.social</label>
+                                                  <label><input type="checkbox" value="cc" class="checkbox" name="check_list">.cc</label>
                                                 </div>
                                                 <div class="checkbox ">
-                                                  <label><input type="checkbox" value="" class="checkbox">.site</label>
+                                                  <label><input type="checkbox" value="biz" class="checkbox" name="check_list">.biz</label>
+                                                </div>
+                                                <div class="checkbox">
+                                                  <label><input type="checkbox" value="info" class="checkbox" name="check_list">.info</label>
+                                                </div>
+                                                <div class="checkbox">
+                                                  <label><input type="checkbox" value="xyz" class="checkbox" name="check_list">.xyz</label>
                                                 </div>
                                                 <div class="checkbox ">
-                                                  <label><input type="checkbox" value="" class="checkbox">.pizza</label>
+                                                  <label><input type="checkbox" value="rocks" class="checkbox" name="check_list">.rocks</label>
+                                                </div>
+                                                <div class="checkbox">
+                                                  <label><input type="checkbox" value="live" class="checkbox" name="check_list">.live</label>
+                                                </div>
+                                                <div class="checkbox">
+                                                  <label><input type="checkbox" value="social" class="checkbox" name="check_list">.social</label>
+                                                </div>
+                                                <div class="checkbox ">
+                                                  <label><input type="checkbox" value="site" class="checkbox" name="check_list">.site</label>
+                                                </div>
+                                                <div class="checkbox ">
+                                                  <label><input type="checkbox" value="pizza" class="checkbox" name="check_list">.pizza</label>
                                                 </div>
 
                                               </div>
                                               <div class="" style="margin-left:120px;">
-                                                <a id="select_all" href="javascript:void(0);">check all|</a>
-                                                <a href="#">update</a>
+
+                                                <input type="submit" name="submit" value="Update">
+                                                  <a id="select_all" href="javascript:void(0);">check all|</a>
+
                                               </div>
 
-
+                                           </form>
                                           </div>
                                           <div class="row">
                                                 <div class="col-sm-12">
                                                   <h4>Order by Date</h4>
-                                                  <select class="selectpicker" data-show-subtext="true" data-live-search="true">
-                                                     <option data-subtext="Rep California">Any Date</option>
-                                                     <option data-subtext="Sen California">Within 1 Day</option>
-                                                      <option data-subtext="Sen California">Within 2 Day</option>
-                                                       <option data-subtext="Sen California">Within 3 Day</option>
-                                                        <option data-subtext="Sen California">Within 4 Day</option>
-                                                         <option data-subtext="Sen California">Within 5 Day</option>
+                                                  <form class="" action="Search.php" method="post">
+
+
+                                                  <select class="selectpicker" name="WithDate">
+                                                     <option value="anydate">Any Date</option>
+                                                     <option  value="1day">Within 1 Day</option>
+                                                      <option value="2day">Within 2 Day</option>
+                                                       <option value="3day">Within 3 Day</option>
+                                                        <option value="4day">Within 4 Day</option>
+                                                         <option value="5day">Within 5 Day</option>
 
 
                                                      </select>
                                                      <br/>
                                                      <div class="" style="text-align:right;">
-                                                       <a href="#">reset|</a>
-                                                       <a href="#">update</a>
+
+                                                       <input type="submit" name="" value="Update" name="submit1">
+                                                       <input type="submit" name="reset" value="reset">
                                                      </div>
 
-
+                                                    </form>
                                                 </div>
 
                                           </div>
                                           <div class="row">
                                                 <div class="col-sm-12">
                                                   <h4>High Bid Amount</h4>
-                                                  <select class="selectpicker" data-show-subtext="true" data-live-search="true">
-                                                     <option data-subtext="Rep California">Any Amount</option>
-                                                     <option data-subtext="Sen California">MoreThan(>=)</option>
-                                                      <option data-subtext="Sen California">LessThan(<=)</option>
+                                                  <form class="" action="" method="post">
+
+
+                                                  <select class="selectpicker" name="cardio" id = "cardio">
+                                                     <option data-subtext="Rep California" value="anyamount" selected>Any Amount</option>
+                                                     <option data-subtext="Sen California" value="morethan">MoreThan(>=)</option>
+                                                      <option data-subtext="Sen California" value="lessthan">LessThan(<=)</option>
 
 
                                                      </select>
+                                                     <div id = "cardioyes" style = "display:none;">
+                                                              $ <input type = "text" name = "duration" />
+                                                               </div>
                                                      <br/>
                                                      <div class="" style="text-align:right;">
-                                                       <a href="#">reset|</a>
-                                                       <a href="#">update</a>
+                                                       <!-- <a href="#">reset|</a>
+                                                       <a href="#">update</a> -->
+                                                       <input type="submit" name="" value="update">
+                                                       <input type="submit" name="reset" value="reset">
                                                      </div>
+                                                  </form>
 
 
                                                 </div>
@@ -274,38 +327,115 @@
                                           </div>
                                           <div class="row">
                                                 <div class="col-sm-12">
+                                                  <form class="" action="" method="post">
+
+
                                                   <h4>Min. Bid Amount</h4>
-                                                  <select class="selectpicker" data-show-subtext="true" data-live-search="true">
-                                                     <option data-subtext="Rep California">Any Amount</option>
-                                                     <option data-subtext="Sen California">MoreThan(>=)</option>
-                                                      <option data-subtext="Sen California">LessThan(<=)</option>
-                                                        <option data-subtext="Sen California">EqualTo</option>
+                                                  <select class="selectpicker" name = "cardio1" id = "cardio1" >
+                                                     <option data-subtext="Rep California" value="anyamount1">Any Amount</option>
+                                                     <option data-subtext="Sen California" value="morethan1">MoreThan(>=)</option>
+                                                      <option data-subtext="Sen California" value="lessthan1">LessThan(<=)</option>
+                                                        <option data-subtext="Sen California" value="equal">EqualTo</option>
 
 
                                                      </select>
+                                                     <div id = "cardioyes1" style = "display:none;">
+                                                              $ <input type = "text" name = "duration1" />
+                                                               </div>
+                                                     <br/>
                                                      <br/>
                                                      <div class="" style="text-align:right;">
-                                                       <a href="#">reset|</a>
-                                                       <a href="#">update</a>
+                                                       <input type="submit" name="" value="update">
+                                                       <input type="submit" name="reset" value="reset">
+
                                                      </div>
+                                                       </form>
 
 
                                                 </div>
 
                                           </div>
                                           <div class="row">
+                                            <form class="" action="" method="post">
+
+
                                                 <div class="col-sm-12">
                                                   <h4>Max Characters</h4>
-                                                  <input type="text" name="" value="">
+                                                  <input type="text" name="max_character" value="">
 
                                                      <br/>
                                                      <div class="" style="text-align:right;">
-                                                       <a href="#">reset|</a>
-                                                       <a href="#">update</a>
+                                                       <input type="submit" name="" value="update">
+                                                       <input type="submit" name="reset" value="reset">
+
                                                      </div>
 
 
                                                 </div>
+                                            </form>
+
+                                          </div>
+
+                                          <div class="row">
+                                                <div class="col-sm-12">
+                                              <form class="" action="" method="post">
+
+
+                                                  <h4>Min Characters</h4>
+                                                  <input type="text" name="min_character" value="">
+
+                                                     <br/>
+                                                     <div class="" style="text-align:right;">
+                                                       <input type="submit" name="" value="update">
+                                                       <input type="submit" name="reset" value="reset">
+                                                     </div>
+
+
+                                                </div>
+                                              </form>
+
+                                          </div>
+                                          <div class="row">
+                                            <form class="" action="" method="post">
+
+
+                                                <div class="col-sm-12">
+                                                  <h4>BlackList</h4>
+                                                  <input type="text" name="blacklist" value="">
+
+                                                     <br/>
+                                                     <div class="" style="text-align:right;">
+                                                       <input type="submit" name="" value="update">
+                                                       <input type="submit" name="reset" value="reset">
+
+                                                     </div>
+
+
+                                                </div>
+                                            </form>
+
+                                          </div>
+                                          <div class="row">
+                                            <form class="" action="" method="post">
+
+
+                                                <div class="col-sm-12">
+                                                  <h4>MYBID</h4>
+                                                MINBID  <input type="text" name="minbid" value="">TO<br/>
+                                                  MAXBID  <input type="text" name="maxbid" value="">
+
+
+
+                                                     <br/>
+                                                     <div class="" style="text-align:right;">
+                                                       <input type="submit" name="" value="update">
+                                                       <input type="submit" name="reset" value="reset">
+
+                                                     </div>
+
+
+                                                </div>
+                                            </form>
 
                                           </div>
                                           <div class="row">
@@ -375,27 +505,31 @@
                                           </div>
                                           <div class="row">
                                             <div class="col-sm-12">
+                                              <form class="" action="" method="post">
+
+
                                                 <h5>Filter SLDs</h5>
                                               <div class="checkbox">
-                                                <label><input type="checkbox" value="" >No numbers</label>
+                                                <label><input type="checkbox" value="nonumber" name="nonumber" >No numbers</label>
                                               </div>
                                               <div class="checkbox">
-                                                <label><input type="checkbox" value="">All numbers</label>
+                                                <label><input type="checkbox" value="allnumber" name="allnumber">All numbers</label>
                                               </div>
-                                              <div class="checkbox disabled">
-                                                <label><input type="checkbox" value="">No dashes</label>
+                                              <div class="checkbox">
+                                                <label><input type="checkbox" value="nodashes" name="nodashes">No dashes</label>
                                               </div>
                                               <div class="" style="text-align:right;">
-                                                <a href="#">reset|</a>
-                                                <a href="#">update</a>
+                                                <input type="submit" name="" value="update">
+                                                <input type="submit" name="reset" value="reset">
                                               </div>
+                                              </form>
 
                                             </div>
 
                                             </div>
                                             <div class="row">
                                               <div class="col-sm-12">
-                                                <button type="button" name="button" class="btn btn-primary">Search Deomains</button><br/>
+                                                <button type="button" name="button" class="btn btn-primary">Search Domains</button><br/>
                                                 <a href="#" style="padding-left:180px;">reset all</a>
                                               </div>
 
@@ -408,7 +542,7 @@
 
 
 
-
+                               </form>
 
                               </div>
                               <div class="col-md-9">
@@ -454,10 +588,195 @@
                                                                         $conn=mysqli_connect("localhost","root","root","namejet");
                                                                         if(!$conn)
                                                                             die("connection failed".mysqli_connect_error());
-                                                                        $sql="select domain_name,type,Bidders,My_Bid, Min_Bid,Current_Bid,Closing_Time from search";
+                                                                            error_reporting(E_ALL & ~E_NOTICE);
+                                                                              $sql="select domain_name,type,Bidders,My_Bid, Min_Bid,Current_Bid,Closing_Time from search";
+
+
+                                                                            if(isset($_POST['reset']))
+                                                                            {
+                                                                              $sql="select domain_name,type,Bidders,My_Bid, Min_Bid,Current_Bid,Closing_Time from search";
+                                                                            }
+
+                                                                            if($_POST['Domain_Type']=='All_domains')
+                                                                            {
+                                                                                $sql="select domain_name,type,Bidders,My_Bid, Min_Bid,Current_Bid,Closing_Time from search";
+
+                                                                            }
+                                                                            elseif($_POST['Domain_Type']=='Pre-Release')
+                                                                            {
+                                                                                 $sql="select domain_name,type,Bidders,My_Bid, Min_Bid,Current_Bid,Closing_Time from search where type='PreRelease'";
+                                                                            }
+                                                                            elseif($_POST['Domain_Type']=='Pending_Deletes')
+                                                                            {
+                                                                                 $sql="select domain_name,type,Bidders,My_Bid, Min_Bid,Current_Bid,Closing_Time from search where type='Pending Delete'";
+                                                                            }
+                                                                            elseif($_POST['Domain_Type']=='Public_Auctions')
+                                                                            {
+                                                                                 $sql="select domain_name,type,Bidders,My_Bid, Min_Bid,Current_Bid,Closing_Time from search where type='Public Auction'";
+                                                                            }
+                                                                            elseif($_POST['public_private']=='public')
+                                                                            {
+                                                                                 $sql="select domain_name,type,Bidders,My_Bid, Min_Bid,Current_Bid,Closing_Time from search where type='Public Auction'";
+                                                                            }
+                                                                            elseif($_POST['public_private']=='private')
+                                                                            {
+                                                                                 $sql="select domain_name,type,Bidders,My_Bid, Min_Bid,Current_Bid,Closing_Time from search where type='PreRelease' or type='Pending Delete'";
+                                                                            }
+
+
+
+
+
+
+                                                                        elseif($_POST['WithDate']=='anydate')
+                                                                          {
+                                                                               $sql="select domain_name,type,Bidders,My_Bid, Min_Bid,Current_Bid,Closing_Time from search";
+                                                                          }
+                                                                          elseif($_POST['WithDate']=='1day')
+                                                                          {
+                                                                               $sql="select domain_name,type,Bidders,My_Bid, Min_Bid,Current_Bid,Closing_Time from search where (substring(Closing_Time,1,2)='1h' or substring(Closing_Time,1,2)='2h' or substring(Closing_Time,1,2)='3h' or substring(Closing_Time,1,3)='11h' or substring(Closing_Time,1,3)='12h');";
+                                                                          }
+                                                                          elseif($_POST['WithDate']=='2day')
+                                                                          {
+                                                                                $sql="select domain_name,type,Bidders,My_Bid, Min_Bid,Current_Bid,Closing_Time from search where (substring(Closing_Time,1,2)='1h' or substring(Closing_Time,1,2)='2h' or substring(Closing_Time,1,2)='3h' or substring(Closing_Time,1,3)='11h' or substring(Closing_Time,1,3)='12h' or substring(Closing_Time,1,2)='1d');";
+                                                                          }
+                                                                          elseif($_POST['WithDate']=='3day')
+                                                                          {
+                                                                           $sql="select domain_name,type,Bidders,My_Bid, Min_Bid,Current_Bid,Closing_Time from search where (substring(Closing_Time,1,2)='1h' or substring(Closing_Time,1,2)='2h' or substring(Closing_Time,1,2)='3h' or substring(Closing_Time,1,3)='11h' or substring(Closing_Time,1,3)='12h' or substring(Closing_Time,1,2)='1d'or substring(Closing_Time,1,2)='2d');";
+                                                                          }
+                                                                          elseif($_POST['WithDate']=='4day')
+                                                                          {
+                                                                           $sql="select domain_name,type,Bidders,My_Bid, Min_Bid,Current_Bid,Closing_Time from search where (substring(Closing_Time,1,2)='1h' or substring(Closing_Time,1,2)='2h' or substring(Closing_Time,1,2)='3h' or substring(Closing_Time,1,3)='11h' or substring(Closing_Time,1,3)='12h' or substring(Closing_Time,1,2)='1d' or substring(Closing_Time,1,2)='2d' or  substring(Closing_Time,1,2)='3d');";
+                                                                          }
+                                                                          elseif($_POST['WithDate']=='5day')
+                                                                          {
+                                                                           $sql="select domain_name,type,Bidders,My_Bid, Min_Bid,Current_Bid,Closing_Time from search where (substring(Closing_Time,1,2)='1h' or substring(Closing_Time,1,2)='2h' or substring(Closing_Time,1,2)='3h' or substring(Closing_Time,1,3)='11h' or substring(Closing_Time,1,3)='12h' or substring(Closing_Time,1,2)='1d' or substring(Closing_Time,1,2)='2d' or  substring(Closing_Time,1,2)='3d' or  substring(Closing_Time,1,2)='4d' );";
+                                                                          }
+
+
+
+                                                                            elseif($_POST['check_list']=='com')
+                                                                            {
+                                                                               $sql="select domain_name,type,Bidders,My_Bid, Min_Bid,Current_Bid,Closing_Time from search where domain_name  like '%.com%'";
+                                                                            }
+                                                                            elseif($_POST['check_list']=='info')
+                                                                            {
+                                                                               $sql="select domain_name,type,Bidders,My_Bid, Min_Bid,Current_Bid,Closing_Time from search where domain_name  like '%.info%'";
+                                                                            }
+                                                                            elseif($_POST['check_list']=='cc')
+                                                                            {
+                                                                               $sql="select domain_name,type,Bidders,My_Bid, Min_Bid,Current_Bid,Closing_Time from search where domain_name  like '%.cc%'";
+                                                                            }
+                                                                            elseif($_POST['check_list']=='biz')
+                                                                            {
+                                                                               $sql="select domain_name,type,Bidders,My_Bid, Min_Bid,Current_Bid,Closing_Time from search where domain_name  like '%.biz%'";
+                                                                            }
+                                                                            elseif($_POST['check_list']=='net')
+                                                                            {
+                                                                               $sql="select domain_name,type,Bidders,My_Bid, Min_Bid,Current_Bid,Closing_Time from search where domain_name  like '%.net%'";
+                                                                            }
+                                                                             elseif($_POST['cardio']=='anyamount')
+                                                                             {
+
+                                                                                 $sql="select domain_name,type,Bidders,My_Bid, Min_Bid,Current_Bid,Closing_Time from search";
+
+                                                                            }
+                                                                           elseif($_POST['cardio']=='morethan')
+                                                                             {
+                                                                                 $amount='$'.$_POST['duration'];
+
+
+
+                                                                                  $sql="select domain_name,type,Bidders,My_Bid, Min_Bid,Current_Bid,Closing_Time from search where '$amount'< Current_Bid";
+
+
+                                                                             }
+                                                                             elseif($_POST['cardio']=='lessthan')
+                                                                               {
+                                                                                   $amount='$'.$_POST['duration'];
+
+
+
+                                                                                    $sql="select domain_name,type,Bidders,My_Bid, Min_Bid,Current_Bid,Closing_Time from search where '$amount'> Current_Bid";
+
+
+                                                                               }
+                                                                               elseif($_POST['cardio1']=='anyamount1')
+                                                                               {
+
+                                                                                   $sql="select domain_name,type,Bidders,My_Bid, Min_Bid,Current_Bid,Closing_Time from search";
+
+                                                                              }
+                                                                              elseif($_POST['cardio1']=='morethan1')
+                                                                                {
+                                                                                    $amount='$'.$_POST['duration1'];
+
+
+
+                                                                                     $sql="select domain_name,type,Bidders,My_Bid, Min_Bid,Current_Bid,Closing_Time from search where '$amount'<Min_Bid";
+
+
+                                                                                }
+                                                                                elseif($_POST['cardio1']=='lessthan1')
+                                                                                  {
+                                                                                      $amount='$'.$_POST['duration1'];
+
+
+
+                                                                                       $sql="select domain_name,type,Bidders,My_Bid, Min_Bid,Current_Bid,Closing_Time from search where '$amount'>Min_Bid";
+
+
+                                                                                  }
+                                                                                  elseif($_POST['cardio1']=='equal')
+                                                                                    {
+                                                                                        $amount='$'.$_POST['duration1'];
+
+
+
+                                                                                         $sql="select domain_name,type,Bidders,My_Bid, Min_Bid,Current_Bid,Closing_Time from search where '$amount'=Min_Bid";
+
+
+                                                                                    }
+                                                                                  elseif($_POST['max_character'])
+                                                                                  {
+                                                                                       $value=$_POST['max_character'];
+                                                                                        $sql="select domain_name,type,Bidders,My_Bid, Min_Bid,Current_Bid,Closing_Time  from search where '$value'>= char_length(substring_index(domain_name,'.',1))";
+                                                                                  }
+                                                                                  elseif($_POST['min_character'])
+                                                                                  {
+                                                                                       $value=$_POST['min_character'];
+                                                                                        $sql="select domain_name,type,Bidders,My_Bid, Min_Bid,Current_Bid,Closing_Time  from search where '$value'<= char_length(substring_index(domain_name,'.',1))";
+                                                                                  }
+                                                                                  elseif($_POST['maxbid'] AND $_POST['minbid'])
+                                                                                  {
+                                                                                       $minbid=$_POST['minbid'];
+                                                                                       $maxbid=$_POST['maxbid'];
+                                                                                        echo $minbid;
+
+                                                                                       echo $maxbid;
+
+                                                                                        // $sql="select domain_name,type,Bidders,My_Bid, Min_Bid,Current_Bid,Closing_Time  from search where '$value'<= char_length(substring_index(domain_name,'.',1))";
+                                                                                  }
+                                                                                  elseif($_POST['blacklist'])
+                                                                                  {
+                                                                                       $value=$_POST['blacklist'];
+
+                                                                                        $sql="select domain_name,type,Bidders,My_Bid, Min_Bid,Current_Bid,Closing_Time from search where not locate('$value',domain_name)>0";
+                                                                                  }
+                                                                                  elseif($_POST['nonumber']=='nonumber')
+                                                                                  {
+                                                                                      $sql="select domain_name,type,Bidders,My_Bid, Min_Bid,Current_Bid,Closing_Time from search where not  substring_index(domain_name,'.',1) regexp '[0-9]'";
+                                                                                  }
+                                                                                  elseif($_POST['allnumber']=='allnumber')
+                                                                                  {
+                                                                                      $sql="select domain_name,type,Bidders,My_Bid, Min_Bid,Current_Bid,Closing_Time from search where  substring_index(domain_name,'.',1) regexp '[0-9]'";
+                                                                                  }
+
+
                                                                         $res=mysqli_query($conn,$sql);
                                                                         if(mysqli_num_rows($res)>0)
                                                                         {
+
                                                                         while($row=mysqli_fetch_assoc($res)){
                                                                       ?>
                                                                       <tr id="table_anchor1">
@@ -568,7 +887,7 @@
            	        {
            	        var table=$('table').DataTable(
                         {
-                          ordering:false,
+
                           "rowHeight": 'auto',
                           'columnDefs': [
                             {
@@ -647,6 +966,46 @@
 
 
                                   // ========================================================================================================================
+                                  $('#cardio').change(function(){
+                                        selection = $(this).val();
+                                        switch(selection)
+                                        {
+                                            //show the <div> or not
+                                            case 'morethan':
+                                                $('#cardioyes').show();
+                                                break;
+                                              case 'lessthan':
+                                              $('#cardioyes').show();
+                                              break;
+
+                                                default:
+                                                $('#cardioyes').hide();
+                                                break;
+                                        }
+                                      });
+                                      // ========================================================================================================================================
+                                      $('#cardio1').change(function(){
+                                            selection = $(this).val();
+                                            switch(selection)
+                                            {
+                                                //show the <div> or not
+                                                case 'morethan1':
+                                                    $('#cardioyes1').show();
+                                                    break;
+                                                  case 'lessthan1':
+                                                  $('#cardioyes1').show();
+                                                  case 'equal':
+                                                  $('#cardioyes1').show();
+                                                  break;
+
+                                                    default:
+                                                    $('#cardioyes1').hide();
+                                                    break;
+                                            }
+                                          });
+
+
+
 
 
 
