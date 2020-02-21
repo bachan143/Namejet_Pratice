@@ -516,7 +516,7 @@
                                                 <label><input type="checkbox" value="allnumber" name="allnumber">All numbers</label>
                                               </div>
                                               <div class="checkbox">
-                                                <label><input type="checkbox" value="nodashes" name="nodashes">No dashes</label>
+                                                <label><input type="checkbox" value="mix" name="mix">Mix</label>
                                               </div>
                                               <div class="" style="text-align:right;">
                                                 <input type="submit" name="" value="update">
@@ -683,7 +683,7 @@
                                                                             }
                                                                            elseif($_POST['cardio']=='morethan')
                                                                              {
-                                                                                 $amount='$'.$_POST['duration'];
+                                                                                 $amount=$_POST['duration'];
 
 
 
@@ -693,7 +693,7 @@
                                                                              }
                                                                              elseif($_POST['cardio']=='lessthan')
                                                                                {
-                                                                                   $amount='$'.$_POST['duration'];
+                                                                                   $amount=$_POST['duration'];
 
 
 
@@ -709,7 +709,7 @@
                                                                               }
                                                                               elseif($_POST['cardio1']=='morethan1')
                                                                                 {
-                                                                                    $amount='$'.$_POST['duration1'];
+                                                                                    $amount=$_POST['duration1'];
 
 
 
@@ -719,7 +719,7 @@
                                                                                 }
                                                                                 elseif($_POST['cardio1']=='lessthan1')
                                                                                   {
-                                                                                      $amount='$'.$_POST['duration1'];
+                                                                                      $amount=$_POST['duration1'];
 
 
 
@@ -729,7 +729,7 @@
                                                                                   }
                                                                                   elseif($_POST['cardio1']=='equal')
                                                                                     {
-                                                                                        $amount='$'.$_POST['duration1'];
+                                                                                        $amount=$_POST['duration1'];
 
 
 
@@ -751,11 +751,9 @@
                                                                                   {
                                                                                        $minbid=$_POST['minbid'];
                                                                                        $maxbid=$_POST['maxbid'];
-                                                                                        echo $minbid;
 
-                                                                                       echo $maxbid;
 
-                                                                                        // $sql="select domain_name,type,Bidders,My_Bid, Min_Bid,Current_Bid,Closing_Time  from search where '$value'<= char_length(substring_index(domain_name,'.',1))";
+                                                                                       $sql="select domain_name,type,Bidders,My_Bid, Min_Bid,Current_Bid,Closing_Time  from search where Min_Bid between '$minbid' and '$maxbid' ";
                                                                                   }
                                                                                   elseif($_POST['blacklist'])
                                                                                   {
@@ -768,6 +766,10 @@
                                                                                       $sql="select domain_name,type,Bidders,My_Bid, Min_Bid,Current_Bid,Closing_Time from search where not  substring_index(domain_name,'.',1) regexp '[0-9]'";
                                                                                   }
                                                                                   elseif($_POST['allnumber']=='allnumber')
+                                                                                  {
+                                                                                      $sql="select domain_name,type,Bidders,My_Bid, Min_Bid,Current_Bid,Closing_Time from search where  substring_index(domain_name,'.',1) regexp '^[0-9]+$'";
+                                                                                  }
+                                                                                  elseif($_POST['mix']=='mix')
                                                                                   {
                                                                                       $sql="select domain_name,type,Bidders,My_Bid, Min_Bid,Current_Bid,Closing_Time from search where  substring_index(domain_name,'.',1) regexp '[0-9]'";
                                                                                   }
@@ -784,9 +786,9 @@
                                                                          <td> <a href="#">  <?= $row['domain_name'] ?> </a> </td>
                                                                          <td><?= $row['type']  ?>  </td>
                                                                          <td><?= $row['Bidders']  ?> </td>
-                                                                         <td><?= $row['My_Bid']  ?> </td>
-                                                                         <td><?= $row['Min_Bid']  ?> </td>
-                                                                         <td><?= $row['Current_Bid']  ?> </td>
+                                                                         <td>$<?= $row['My_Bid']  ?> </td>
+                                                                         <td>$<?= $row['Min_Bid']  ?> </td>
+                                                                         <td>$<?= $row['Current_Bid']  ?>R </td>
                                                                          <td><?= $row['Closing_Time']  ?> </td>
 
                                                                       </tr>
